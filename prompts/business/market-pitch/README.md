@@ -1,12 +1,41 @@
 # Product Marketing Pitch Generator
 
-## Overview
-This prompt helps business owners, entrepreneurs, and marketers generate clear, compelling 3-paragraph product marketing pitches tailored to a specific target audience and brand tone.
+**Structure:** Modified R-T-F (Role, Task, Inputs, Constraints, Format)  
+**Technique:** Zero-Shot  
+**Output:** A 3-paragraph marketing pitch under 250 words with no buzzwords  
+
+---
 
 ## Quick Start
-1. Copy the template from `prompt.md`.
-2. Fill in the `[PLACEHOLDERS]` with your specific product name, target audience, key benefits, and preferred tone.
-3. Run the prompt in your AI model to generate a polished pitch.
 
-## Expected Output
-A structured 3-paragraph marketing pitch consisting of a Hook, Solution, and Call to Action (under 250 words).
+1. Open [`prompt.md`](./prompt.md) and copy the template.
+2. Replace the placeholders:
+   - `[PRODUCT_NAME]`: The name of your product or service.
+   - `[TARGET_AUDIENCE]`: Who you are selling to.
+   - `[KEY_BENEFIT]`: The primary feature or main benefit.
+   - `[TONE]`: The desired voice (e.g., energetic, professional).
+3. Paste it into your AI model of choice and run it.
+4. Review the output and adapt it to what you need.
+
+---
+
+## Examples
+
+See the [`examples/`](./examples/) folder for filled-in demonstrations showing the prompt and the resulting output.
+
+---
+
+## Customization Tips
+
+- **Want more detail?** Ask the model to add a bulleted list of 3 secondary features.
+- **Want it shorter?** Specify a maximum of 2 paragraphs or under 150 words in the constraints.
+- **Different context?** Change the target audience to B2B professionals to shift from consumer pitch to investor pitch.
+
+---
+
+## Technical Details
+
+- **Structure:** Modified R-T-F framework
+- **Technique:** Zero-shot
+- **Best models:** Gemini, ChatGPT, Claude
+- **Placeholders:** 4 placeholders
