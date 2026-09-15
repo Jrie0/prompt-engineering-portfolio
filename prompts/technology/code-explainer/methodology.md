@@ -1,7 +1,14 @@
+---
+
+### 2. Technology Category — `methodology.md`
+
+In GitHub, navigate to `prompts/technology/code-explainer/methodology.md`, click the pencil icon, and replace the text with this:
+
+```markdown
 # Design Methodology: Plain-English Code Explainer
 
 ## Design Goal
-Allow beginner computer science students to understand programming logic line-by-line without getting overwhelmed by unexplained technical buzzwords.
+Help new programming students understand lines of code without getting confused by hard technical words.
 
 ---
 
@@ -10,13 +17,13 @@ Allow beginner computer science students to understand programming logic line-by
 **Structure I used:** Custom Teacher-Student Structure (Summary, Step-by-Step Breakdown, Key Takeaway).
 
 **Why this structure fits my task:**
-- Starting with a high-level **Summary** provides a quick mental map of what the code achieves before diving into syntax.
-- Isolating a **Key Takeaway** reinforces fundamental computer science concepts for long-term learning.
+- Starting with a **Summary** gives students a quick idea of what the code does before looking at lines.
+- Adding a **Key Takeaway** helps students remember the main coding idea.
 
 **Technique I used:** Zero-Shot Chain-of-Thought ("Think step-by-step").
 
 **Why this technique fits my task:**
-Code execution relies on sequential logic. Instructing the AI to "think through the logic step-by-step" forces it to trace execution paths line-by-line rather than making assumptions or skipping lines.
+Code runs line by line in order. Telling the AI to "think step-by-step" forces it to trace the code slowly instead of skipping steps.
 
 ---
 
@@ -24,11 +31,11 @@ Code execution relies on sequential logic. Instructing the AI to "think through 
 
 | Part | What I put here | Why the prompt needs it |
 |------|-----------------|-------------------------|
-| Role | Patient CS instructor explaining to a beginner | Gives an encouraging tone without intimidating language. |
-| Task & Instruction | Explain code logic step-by-step | Explicitly starts Chain-of-Thought reasoning. |
-| Inputs | Programming Language and Code Snippet | Gives the important context the AI needs to process the code. |
-| Constraints | Avoid unexplained buzzwords | Keeps the model from using complex computer science terms without explaining them. |
-| Format | 3-part layout (Summary, Breakdown, Takeaway) | Gives a scannable structure for student review. |
+| Role | Patient computer science teacher for beginners | Keeps the tone helpful and friendly so students do not feel confused. |
+| Task & Instruction | Explain code step-by-step | Forces the AI to slow down and explain line by line. |
+| Inputs | Programming Language and Code Snippet | Shows the AI the exact code it needs to explain. |
+| Constraints | Avoid hard jargon | Stops the AI from using complex words without explaining what they mean. |
+| Format | 3-part layout (Summary, Breakdown, Takeaway) | Keeps the final answer neat and easy to read. |
 
 ---
 
