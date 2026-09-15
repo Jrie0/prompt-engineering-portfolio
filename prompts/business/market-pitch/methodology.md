@@ -1,7 +1,7 @@
 # Design Methodology: Product Marketing Pitch Generator
 
 ## Design Goal
-Create a structured prompt that generates clear and persuasive product marketing pitches tailored to a specific audience without relying on overused hype words.
+Make a simple prompt that writes short, convincing sales pitches for products without using fake hype or buzzwords.
 
 ---
 
@@ -10,13 +10,13 @@ Create a structured prompt that generates clear and persuasive product marketing
 **Structure I used:** Modified R-T-F (Role, Task, Inputs, Constraints, Format).
 
 **Why this structure fits my task:**
-- Assigning a clear **Role** sets a professional copywriter tone immediately.
-- Adding strict **Constraints** prevents common AI marketing slop like buzzwords and unverified claims.
+- Giving the AI a clear **Role** helps it sound like a professional marketer right away.
+- Adding strict **Constraints** stops the AI from using annoying marketing buzzwords or making fake health claims.
 
 **Technique I used:** Zero-shot.
 
 **Why this technique fits my task:**
-Marketing pitches follow standard structural rules. Providing specific format guidelines and constraints gives the AI enough direction without needing full worked examples.
+Sales pitches usually follow a basic pattern. Giving clear rules and layout steps gives the AI enough help without needing a full sample example.
 
 ---
 
@@ -24,11 +24,11 @@ Marketing pitches follow standard structural rules. Providing specific format gu
 
 | Part | What I put here | Why the prompt needs it |
 |------|-----------------|-------------------------|
-| Role | Expert product marketing strategist | Establishes professional authority and persuasive writing style. |
-| Task | Draft a concise, high-converting product marketing pitch | Defines the core goal of the prompt clearly. |
-| Inputs | Product Name, Target Audience, Key Benefit, Tone | Ensures the pitch is customized to a specific product and user demographic. |
-| Constraints | Word limit (<250 words), anti-buzzword rule, no unverified claims | Keeps copy concise, believable, and grounded. |
-| Format | 3-part layout (Hook, Solution, Call to Action) | Guarantees a classic, high-converting copy structure. |
+| Role | Expert product marketing strategist | Helps the AI write professionally and persuasively. |
+| Task | Draft a concise product marketing pitch | Tells the AI exactly what job to do. |
+| Inputs | Product Name, Target Audience, Key Benefit, Tone | Gives the AI the exact details about the product to write about. |
+| Constraints | Under 250 words, no buzzwords, no fake claims | Keeps the writing short, honest, and easy to read. |
+| Format | 3-part layout (Hook, Solution, Call to Action) | Makes sure the pitch has a clear beginning, middle, and ending. |
 
 ---
 
@@ -36,4 +36,5 @@ Marketing pitches follow standard structural rules. Providing specific format gu
 
 **Baseline I compared against:**
 ```text
+Write a marketing pitch for the HydroGlow Insulated Water Bottle for busy professionals.
 Write a marketing pitch for the HydroGlow Insulated Water Bottle for busy professionals.
