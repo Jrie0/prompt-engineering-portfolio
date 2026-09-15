@@ -1,25 +1,45 @@
-# Prompt Methodology: Plain-English Code Explainer
+# Design Methodology: Plain-English Code Explainer
 
-## Design Choices
-
-### 1. Structure Selection
-- **Framework:** Custom Teacher-Student Framework (Role, High-Level Summary, Line-by-Line Breakdown, Key Takeaway).
-- **Justification:** Code explanations often overwhelm beginners when they drop straight into line-by-line syntax. Structuring the prompt to demand an initial summary before diving into details gives learners a mental map before dealing with technical syntax.
-
-### 2. Technique Selection
-- **Technique:** Zero-Shot Chain-of-Thought (Asking the model to reason step-by-step through the code logic before summarizing).
-- **Justification:** Technical code analysis requires step-by-step logical verification. Forcing the AI to walk through execution line-by-line prevents it from skipping steps or hallucinating what a code snippet does.
+## Design Goal
+Allow beginner computer science students to understand programming logic line-by-line without getting overwhelmed by unexplained technical buzzwords.
 
 ---
 
-## Evaluation & Testing Results
+## Design Approach: Structure and Technique
 
-### Naive vs. Designed Prompt Evaluation
+**Structure I used:** Custom Teacher-Student Structure (Summary, Step-by-Step Breakdown, Key Takeaway).
 
-- **Naive Prompt Used:** *"Explain what this code does."*
-- **Designed Prompt Score:** 95 / 100
-- **Naive Prompt Score:** 50 / 100
+**Why this structure fits my task:**
+- Starting with a high-level **Summary** provides a quick mental map of what the code achieves before diving into syntax.
+- Isolating a **Key Takeaway** reinforces fundamental computer science concepts for long-term learning.
 
-### Evaluator Feedback
-- **Naive Output:** The naive output used heavy computer science jargon without explanations and jumped around between different parts of the code without a clear sequence.
-- **Designed Output:** The structured prompt delivered a clear, beginner-friendly walkthrough that defined technical terms as they appeared and provided a useful summary for context.
+**Technique I used:** Zero-Shot Chain-of-Thought ("Think step-by-step").
+
+**Why this technique fits my task:**
+Code execution relies on sequential logic. Instructing the AI to "think through the logic step-by-step" forces it to trace execution paths line-by-line rather than making assumptions or skipping lines.
+
+---
+
+## Part-by-Part Justification
+
+| Part | What I put here | Why the prompt needs it |
+|------|-----------------|-------------------------|
+| Role | Patient CS instructor explaining to a beginner | Gives an encouraging tone without intimidating language. |
+| Task & Instruction | Explain code logic step-by-step | Explicitly starts Chain-of-Thought reasoning. |
+| Inputs | Programming Language and Code Snippet | Gives the important context the AI needs to process the code. |
+| Constraints | Avoid unexplained buzzwords | Keeps the model from using complex computer science terms without explaining them. |
+| Format | 3-part layout (Summary, Breakdown, Takeaway) | Gives a scannable structure for student review. |
+
+---
+
+## Testing and Iteration
+
+**Baseline I compared against:**
+```text
+Explain what this code does:
+def find_even_numbers(numbers):
+    evens = []
+    for num in numbers:
+        if num % 2 == 0:
+            evens.append(num)
+    return evens
