@@ -1,25 +1,39 @@
-# Prompt Methodology: Active Study Guide Generator
+# Design Methodology: Active Study Guide Generator
 
-## Design Choices
-
-### 1. Structure Selection
-- **Framework:** C-A-R-E (Context, Action, Result, Example) adapted for pedagogical study guide design.
-- **Justification:** Passive reading is inefficient for studying. Structuring the prompt around active recall forces the AI to produce materials that engage the learner through testing rather than just summarizing text.
-
-### 2. Technique Selection
-- **Technique:** Few-Shot (Multi-Shot) Prompting with explicit question-answer formatting.
-- **Justification:** AI models often output passive study summaries instead of test questions. Demonstrating the exact format for active recall questions ensures consistent, high-utility test prep materials.
+## Design Goal
+Turn plain class notes into an easy study guide that helps students test themselves before an exam.
 
 ---
 
-## Evaluation & Testing Results
+## Design Approach: Structure and Technique
 
-### Naive vs. Designed Prompt Evaluation
+**Structure I used:** C-A-R-E Framework (Context, Action, Result, Example).
 
-- **Naive Prompt Used:** *"Make a study guide from these notes."*
-- **Designed Prompt Score:** 94 / 100
-- **Naive Prompt Score:** 48 / 100
+**Why this structure fits my task:**
+- Setting the **Context** makes sure the study guide is easy to read for the right grade level.
+- Giving a clear **Action** stops the AI from just copying the notes back to you.
 
-### Evaluator Feedback
-- **Naive Output:** The naive output simply repeated the notes back in bullet points, creating a wall of text with no active recall elements or vocabulary separation.
-- **Designed Output:** The structured prompt separated essential concepts, defined key terms concisely, and built an interactive self-test section that actively engages the student.
+**Technique I used:** Few-Shot Prompting.
+
+**Why this technique fits my task:**
+AI models usually just summarize notes. Giving it a short example shows it exactly how to write practice questions with answers.
+
+---
+
+## Part-by-Part Justification
+
+| Part | What I put here | Why the prompt needs it |
+|------|-----------------|-------------------------|
+| Role | Educational designer | Helps the AI write like a good teacher. |
+| Inputs | Subject, Grade Level, Source Notes | Gives the AI the exact material it needs to turn into a study guide. |
+| Constraints | No circular definitions and simple tone | Stops the AI from using hard words to explain simple ideas. |
+| Few-Shot Example | Worked question and answer sample | Forces the AI to make a real practice test instead of just a big block of text. |
+
+---
+
+## Testing and Iteration
+
+**Baseline I compared against:**
+```text
+Make a study guide from these notes:
+Light is a form of energy that travels in waves. Refraction is when light bends as it passes from one material into another, like from air into water. Snell's Law helps calculate how much the light bends based on the index of refraction of the materials.
