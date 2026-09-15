@@ -37,4 +37,3 @@ Sales pitches usually follow a basic pattern. Giving clear rules and layout step
 **Baseline I compared against:**
 ```text
 Write a marketing pitch for the HydroGlow Insulated Water Bottle for busy professionals.
-Write a marketing pitch for the HydroGlow Insulated Water Bottle for busy professionals.
