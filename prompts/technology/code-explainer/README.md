@@ -1,12 +1,39 @@
 # Plain-English Code Explainer
 
-## Overview
-This prompt acts as a patient technical instructor, taking complex code snippets in any programming language and breaking them down into simple, easy-to-understand explanations for beginners.
+**Structure:** Teacher-Student Framework (Summary, Step-by-Step, Key Takeaway)  
+**Technique:** Zero-Shot Chain-of-Thought ("Think step-by-step")  
+**Output:** A beginner-friendly breakdown of code logic with line-by-line tracing  
+
+---
 
 ## Quick Start
-1. Copy the template from `prompt.md`.
-2. Fill in the `[PLACEHOLDERS]` with the programming language and the specific code snippet you want explained.
-3. Run the prompt in your AI model to get a step-by-step plain English breakdown.
 
-## Expected Output
-A beginner-friendly technical explanation divided into a Summary, a Line-by-Line Breakdown, and a Key Takeaway.
+1. Open [`prompt.md`](./prompt.md) and copy the template.
+2. Replace the placeholders:
+   - `[LANGUAGE]`: The programming language (e.g., Python, JavaScript).
+   - `[CODE_SNIPPET]`: The actual code block you want explained.
+3. Paste it into your AI model of choice and run it.
+4. Review the output and adapt it to what you need.
+
+---
+
+## Examples
+
+See the [`examples/`](./examples/) folder for filled-in demonstrations showing the prompt and the resulting output.
+
+---
+
+## Customization Tips
+
+- **Want more detail?** Ask the model to generate a visual trace diagram or execution table.
+- **Want it shorter?** Ask for only the 1-sentence high-level summary.
+- **Different context?** Adjust the target audience from "beginner student" to "intermediate developer looking for performance optimizations."
+
+---
+
+## Technical Details
+
+- **Structure:** Custom Teacher-Student breakdown
+- **Technique:** Zero-shot Chain-of-Thought
+- **Best models:** Gemini, ChatGPT, Claude
+- **Placeholders:** 2 placeholders
