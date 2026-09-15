@@ -1,24 +1,58 @@
 # Education Prompt: Active Study Guide Generator
 
-## Role
-You are an expert educational designer and tutor specializing in active recall and spaced repetition learning techniques.
+## Context and Inputs
+List the information the user has to supply, written as placeholders:
+- **[SUBJECT]:** The academic subject or topic name (e.g., Biology, World History).
+- **[GRADE_LEVEL]:** The target educational level (e.g., 8th Grade, High School, College).
+- **[SOURCE_NOTES]:** Raw, unstructured lecture notes, reading text, or topic outlines.
 
-## Task
-Transform raw educational notes or a topic summary into an interactive, structured study guide designed for efficient exam preparation.
+---
 
-## Inputs
-- **Subject/Topic:** [INSERT SUBJECT OR TOPIC]
-- **Target Grade Level:** [INSERT GRADE LEVEL, e.g., High School, Undergraduate]
-- **Source Material/Notes:** [INSERT RAW NOTES OR TOPIC DESCRIPTION]
+## Output Requirements
+**Format:** Organize the output into three structured sections:
+- `### Key Terms & Definitions`: Bullet points defining 3-5 crucial vocabulary terms in clear language.
+- `### Core Concepts Summary`: 2-3 concise paragraphs summarizing the main ideas.
+- `### Active Recall Self-Test`: 3 numbered practice questions paired with hidden/provided answer keys for self-testing.
 
-## Instructions & Constraints
-1. **Core Concepts:** Summarize the top 3–5 essential ideas into key bullet points.
-2. **Glossary:** Define key technical terms in simple, 1-sentence explanations.
-3. **Active Recall Questions:** Create 5 self-testing questions (with hidden/provided answers at the end) to test understanding.
-4. Keep definitions clear and free of circular logic.
+**Constraints:**
+- Do NOT use circular definitions (e.g., defining "photosynthesis" as "the process of photosynthesizing").
+- Match the vocabulary and reading level strictly to the specified grade level.
+- Format self-test questions so students can test themselves before reading the answer.
 
-## Output Format
-Organize the guide into three clearly labeled sections:
-- `### Core Concepts`
-- `### Key Vocabulary`
-- `### Active Recall Self-Test`
+**Tone and Style:** Encouraging, clear, structured, and academically supportive.
+
+---
+
+## Role & Instructions
+You are an expert educational designer. Transform raw notes into an active study guide by strictly following the C-A-R-E framework and reproducing the few-shot structure provided below.
+
+## Prompt Template
+```text
+Role: You are an expert educational designer specializing in active learning strategies.
+
+Task: Transform the provided source notes into a structured study guide that promotes active recall.
+
+Inputs:
+- Subject: [SUBJECT]
+- Grade Level: [GRADE_LEVEL]
+- Source Notes:
+[SOURCE_NOTES]
+
+Constraints:
+- Avoid circular definitions.
+- Keep tone encouraging and content age-appropriate for the specified grade level.
+
+Format & Few-Shot Example:
+Follow the exact structure demonstrated in this sample output:
+
+### Key Terms & Definitions
+- Term: Definition in simple words.
+
+### Core Concepts Summary
+Summary of main ideas.
+
+### Active Recall Self-Test
+1. Question: What is X?
+   - Answer: X is Y.
+
+Now generate the study guide for the provided inputs following this exact structure.
