@@ -1,25 +1,39 @@
-# Prompt Methodology: Product Marketing Pitch Generator
+# Design Methodology: Product Marketing Pitch Generator
 
-## Design Choices
-
-### 1. Structure Selection
-- **Framework:** R-T-F (Role, Task, Format) extended with explicit Constraints and Inputs.
-- **Justification:** Giving the AI a clear role (Expert Marketing Strategist) grounds its tone, while setting strict constraints (3 paragraphs, under 250 words, avoiding buzzwords) prevents generic, wordy fluff.
-
-### 2. Technique Selection
-- **Technique:** Zero-Shot with Structural Constraints.
-- **Justification:** Marketing pitches follow a standard Hook-Solution-CTA structure. Clear structural constraints provide sufficient guidance without needing full worked examples, keeping the execution quick and versatile across different products.
+## Design Goal
+Create a structured prompt that generates clear and persuasive product marketing pitches tailored to a specific audience without relying on overused hype words.
 
 ---
 
-## Evaluation & Testing Results
+## Design Approach: Structure and Technique
 
-### Naive vs. Designed Prompt Evaluation
+**Structure I used:** Modified R-T-F (Role, Task, Inputs, Constraints, Format).
 
-- **Naive Prompt Used:** *"Write a marketing pitch for a product."*
-- **Designed Prompt Score:** 92 / 100
-- **Naive Prompt Score:** 45 / 100
+**Why this structure fits my task:**
+- Assigning a clear **Role** sets a professional copywriter tone immediately.
+- Adding strict **Constraints** prevents common AI marketing slop like buzzwords and unverified claims.
 
-### Evaluator Feedback
-- **Naive Output:** The naive prompt produced a generic, overly hyped block of text with buzzwords like "game-changer" and lacked a clear target audience focus.
-- **Designed Output:** The structured prompt generated a clean, persuasive 3-paragraph copy with a strong hook, clear benefits, and a compelling Call to Action, perfectly adhering to the word limit and tone constraints.
+**Technique I used:** Zero-shot.
+
+**Why this technique fits my task:**
+Marketing pitches follow standard structural rules. Providing specific format guidelines and constraints gives the AI enough direction without needing full worked examples.
+
+---
+
+## Part-by-Part Justification
+
+| Part | What I put here | Why the prompt needs it |
+|------|-----------------|-------------------------|
+| Role | Expert product marketing strategist | Establishes professional authority and persuasive writing style. |
+| Task | Draft a concise, high-converting product marketing pitch | Defines the core goal of the prompt clearly. |
+| Inputs | Product Name, Target Audience, Key Benefit, Tone | Ensures the pitch is customized to a specific product and user demographic. |
+| Constraints | Word limit (<250 words), anti-buzzword rule, no unverified claims | Keeps copy concise, believable, and grounded. |
+| Format | 3-part layout (Hook, Solution, Call to Action) | Guarantees a classic, high-converting copy structure. |
+
+---
+
+## Testing and Iteration
+
+**Baseline I compared against:**
+```text
+Write a marketing pitch for the HydroGlow Insulated Water Bottle for busy professionals.
