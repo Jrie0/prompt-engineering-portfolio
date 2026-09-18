@@ -24,7 +24,7 @@ Sales pitches usually follow a basic pattern. Giving clear rules and layout step
 
 | Part | What I put here | Why the prompt needs it |
 |------|-----------------|-------------------------|
-| Role | Expert product marketing strategist | Helps the AI write professionally and persuasively. |
+| Role | Expert product marketing strategist | Helps the AI write in a proffesional and persuasive way. |
 | Task | Draft a concise product marketing pitch | Tells the AI exactly what job to do. |
 | Inputs | Product Name, Target Audience, Key Benefit, Tone | Gives the AI the exact details about the product to write about. |
 | Constraints | Under 250 words, no buzzwords, no fake claims | Keeps the writing short, honest, and easy to read. |
