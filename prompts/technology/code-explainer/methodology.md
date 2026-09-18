@@ -2,7 +2,7 @@
 
 ### 2. Technology Category — `methodology.md`
 
-In GitHub, navigate to `prompts/technology/code-explainer/methodology.md`, click the pencil icon, and replace the text with this:
+In GitHub, go to `prompts/technology/code-explainer/methodology.md`, click the pencil icon, and paste this in:
 
 ```markdown
 # Design Methodology: Plain-English Code Explainer
@@ -14,15 +14,15 @@ Help new programming students understand lines of code without getting confused 
 
 ## Design Approach: Structure and Technique
 
-**Structure I used:** Custom Teacher-Student Structure (Summary, Step-by-Step Breakdown, Key Takeaway).
+Structure I used: Custom Teacher-Student Structure (Summary, Step-by-Step Breakdown, Key Takeaway).
 
-**Why this structure fits my task:**
-- Starting with a **Summary** gives students a quick idea of what the code does before looking at lines.
-- Adding a **Key Takeaway** helps students remember the main coding idea.
+Why this structure fits my task:
+- Starting with a Summary gives students a quick idea of what the code does before looking at lines.
+- Adding a Key Takeaway helps students remember the main coding idea.
 
-**Technique I used:** Zero-Shot Chain-of-Thought ("Think step-by-step").
+Technique I used: Zero-Shot Chain-of-Thought ("Think step-by-step").
 
-**Why this technique fits my task:**
+Why this technique fits my task:
 Code runs line by line in order. Telling the AI to "think step-by-step" forces it to trace the code slowly instead of skipping steps.
 
 ---
@@ -40,13 +40,3 @@ Code runs line by line in order. Telling the AI to "think step-by-step" forces i
 ---
 
 ## Testing and Iteration
-
-**Baseline I compared against:**
-```text
-Explain what this code does:
-def find_even_numbers(numbers):
-    evens = []
-    for num in numbers:
-        if num % 2 == 0:
-            evens.append(num)
-    return evens
