@@ -34,7 +34,7 @@ Code runs line by line in order. Telling the AI to "think step-by-step" forces i
 | Role | Patient computer science teacher for beginners | Keeps the tone helpful and friendly so students do not feel confused. |
 | Task & Instruction | Explain code step-by-step | Forces the AI to slow down and explain line by line. |
 | Inputs | Programming Language and Code Snippet | Shows the AI the exact code it needs to explain. |
-| Constraints | Avoid hard jargon | Stops the AI from using complex words without explaining what they mean. |
+| Constraints | Avoid hard Language | Stops the AI from using complex words without explaining what they mean. |
 | Format | 3-part layout (Summary, Breakdown, Takeaway) | Keeps the final answer neat and easy to read. |
 
 ---
