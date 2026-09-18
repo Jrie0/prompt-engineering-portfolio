@@ -1,40 +1,40 @@
 # Active Study Guide Generator
 
-**Structure:** C-A-R-E Framework (Context, Action, Result, Example)  
-**Technique:** Few-Shot Prompting  
-**Output:** A simple study guide with definitions, a short summary, and practice questions  
+**Structure:** CARE Framework (Context, Action, Result, Example)  
+**Technique:** Few-Shot (gives the AI a sample example)  
+**Output:** A simple study guide with key words, a short summary, and practice questions  
 
 ---
 
 ## Quick Start
 
-1. Open [`prompt.md`](./prompt.md) and copy the template.
-2. Replace the placeholders:
-   - `[SUBJECT]`: The topic name (like Science or History).
-   - `[GRADE_LEVEL]`: The school grade level (like 8th Grade or High School).
-   - `[SOURCE_NOTES]`: The notes or textbook text you want to study.
-3. Paste it into your AI model of choice and run it.
-4. Review the output and adapt it to what you need.
+1. Open [`prompt.md`](./prompt.md) and copy the text.
+2. Fill in the blanks:
+   - `[SUBJECT]`: The class name (like Science or History).
+   - `[GRADE_LEVEL]`: Your grade in school (like 8th Grade).
+   - `[SOURCE_NOTES]`: The notes or textbook pages you want to study.
+3. Paste it into your AI model and run it.
+4. Read over the study guide and use it to test yourself.
 
 ---
 
 ## Examples
 
-See the [`examples/`](./examples/) folder for filled-in demonstrations showing the prompt and the resulting output.
+Check the [`examples/`](./examples/) folder to see what a filled-in prompt and output look like.
 
 ---
 
-## Customization Tips
+## Tips to Change It
 
-- **Want more detail?** Ask the AI to add 3 more study questions.
-- **Want it shorter?** Ask for only the vocabulary definitions.
-- **Different context?** Ask the AI to turn the questions into flashcard format.
+- **Need more questions?** Tell the AI to add 3 more test questions.
+- **Want just vocabulary?** Ask the AI to only give you the key word definitions.
+- **Want flashcards?** Tell the AI to format the questions so you can copy them into Quizlet.
 
 ---
 
-## Technical Details
+## Quick Info
 
-- **Structure:** C-A-R-E framework
-- **Technique:** Few-shot
-- **Best models:** Gemini, ChatGPT, Claude
-- **Placeholders:** 3 placeholders
+- **Framework:** CARE
+- **Technique:** Few-shot (uses an example)
+- **Best AI tools:** Gemini, ChatGPT, Claude
+- **Blanks to fill in:** 3 placeholders
