@@ -1,39 +1,39 @@
 # Plain-English Code Explainer
 
-**Structure:** Teacher-Student Framework (Summary, Step-by-Step, Key Takeaway)  
-**Technique:** Zero-Shot Chain-of-Thought ("Think step-by-step")  
-**Output:** A beginner-friendly breakdown of code logic with line-by-line tracing  
+**Structure:** Teacher-Student Breakdown (Summary, Step-by-Step, Key Takeaway)  
+**Technique:** Zero-Shot Chain-of-Thought (tells the AI to think step-by-step)  
+**Output:** A simple breakdown of code that explains what it does line by line  
 
 ---
 
 ## Quick Start
 
-1. Open [`prompt.md`](./prompt.md) and copy the template.
-2. Replace the placeholders:
-   - `[LANGUAGE]`: The programming language (e.g., Python, JavaScript).
-   - `[CODE_SNIPPET]`: The actual code block you want explained.
-3. Paste it into your AI model of choice and run it.
-4. Review the output and adapt it to what you need.
+1. Open [`prompt.md`](./prompt.md) and copy the text.
+2. Fill in the blanks:
+   - `[LANGUAGE]`: The coding language (like Python or Java).
+   - `[CODE_SNIPPET]`: The lines of code you want explained.
+3. Paste it into your AI model and run it.
+4. Read the breakdown to understand how the code works.
 
 ---
 
 ## Examples
 
-See the [`examples/`](./examples/) folder for filled-in demonstrations showing the prompt and the resulting output.
+Check the [`examples/`](./examples/) folder to see what a filled-in prompt and output look like.
 
 ---
 
-## Customization Tips
+## Tips to Change It
 
-- **Want more detail?** Ask the model to generate a visual trace diagram or execution table.
-- **Want it shorter?** Ask for only the 1-sentence high-level summary.
-- **Different context?** Adjust the target audience from "beginner student" to "intermediate developer looking for performance optimizations."
+- **Want pictures or charts?** Ask the AI to draw a visual flowchart of the code steps.
+- **Want a quick answer?** Tell the AI to only give you the 1-sentence summary.
+- **Making it harder?** Change the target user from "beginner student" to "experienced developer."
 
 ---
 
-## Technical Details
+## Quick Info
 
-- **Structure:** Custom Teacher-Student breakdown
+- **Framework:** Teacher-Student
 - **Technique:** Zero-shot Chain-of-Thought
-- **Best models:** Gemini, ChatGPT, Claude
-- **Placeholders:** 2 placeholders
+- **Best AI tools:** Gemini, ChatGPT, Claude
+- **Blanks to fill in:** 2 placeholders
