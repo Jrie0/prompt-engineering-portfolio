@@ -12,10 +12,10 @@
 2. Replace the placeholders:
    - `[PRODUCT_NAME]`: The name of your product or service.
    - `[TARGET_AUDIENCE]`: Who you are selling to.
-   - `[KEY_BENEFIT]`: The primary feature or main benefit.
-   - `[TONE]`: The desired voice (e.g., energetic, professional).
-3. Paste it into your AI model of choice and run it.
-4. Review the output and adapt it to what you need.
+   - `[KEY_BENEFIT]`: The main benefit.
+   - `[TONE]`: Preferred tone of voice (e.g., energetic, professional).
+3. Paste it into your AI Chatbot of your choosing and run it.
+4. Check the output and use it for what you need.
 
 ---
 
@@ -28,8 +28,8 @@ See the [`examples/`](./examples/) folder for filled-in demonstrations showing t
 ## Customization Tips
 
 - **Want more detail?** Ask the model to add a bulleted list of 3 secondary features.
-- **Want it shorter?** Specify a maximum of 2 paragraphs or under 150 words in the constraints.
-- **Different context?** Change the target audience to B2B professionals to shift from consumer pitch to investor pitch.
+- **Want it shorter?** Ask for a maximum of 2 paragraphs or under 150 words.
+- **Different context?** Change the targeted audience to B2B professionals to shift from consumer pitch to investor pitch.
 
 ---
 
