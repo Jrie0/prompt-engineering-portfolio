@@ -1,4 +1,4 @@
-# [Prompt Name] Simple worded Code Explainer
+# Simple worded Code Explainer
 > *Brekas down computer code into line by line explanation for beginners.*
 ## Overview
 This prompt takes any bit of code and turns it into an easy explanation without complex words. It helps people understand how their code runs line by line without any confusing words.
