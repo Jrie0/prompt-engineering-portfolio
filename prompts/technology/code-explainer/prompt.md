@@ -1,4 +1,4 @@
-# [Prompt Name] Plain English Code Explainer
+# Simple Language Code Explainer
 
 ## Overview
 **Purpose:** Breaks down confusing code into simple explanations without big unfamiliar words.
