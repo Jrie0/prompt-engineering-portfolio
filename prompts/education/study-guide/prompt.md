@@ -24,8 +24,8 @@ Study question: What is needed to get a stationary object moving. (Unbalanced fo
 
 ## Context and Inputs
 List the information the user has to supply, written as placeholders:
-- **Notes:** The raw sentences to summarize and put into a study card.
-- **Target Grade Level:** Users level of understanding
+- **[Notes]:** The raw sentences to summarize and put into a study card.
+- **[Target Grade Level]:** Users level of understanding.
 ---
 ## Output Requirements
 **Format:** A single study card with 3 labeled points. Includes, Core concept, Plain definition, and study question with the answer.
