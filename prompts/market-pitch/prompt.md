@@ -21,8 +21,8 @@ The Advantage: A sentence explaining why the product is better than alternatives
 Call to action: A closing sentence leading the customer on what to do next.
 ## Context and Inputs
 List the information the user has to supply, written as placeholders:
-- **Product Details:** The main specifications and benefits of the product being pitched.
-- **Target Audience:** The group of people the pitch is made for.
+- **[Product Details]:** The main specifications and benefits of the product being pitched.
+- **[Target Audience]:** The group of people the pitch is made for.
 
 ---
 ## Output Requirements
