@@ -6,11 +6,11 @@ Used to break down computer code into a simple explanation for beginner students
 Explain the two design choices behind your prompt and why they fit the task.
 **Structure I used:** RTF with constraints and format.
 **Why this structure fits my task:**
-- Sets a teacher role so its beginner friendly.
+- Sets a teacher role tone so its beginner friendly.
 - Adding Constraints and Format keeps the AI easy to understand and compact.
 **Technique I used:** Zero shot chain of thought.
 **Why this technique fits my task:**
-Tracing code needs step by step logic so the model doesn't make mistakes and hallucinate. 
+Tracing code needs step by step logic so the model doesn't make mistakes or miss something.
 ---
 ## Part-by-Part Justification
 Justify each part of your prompt: what it is, what goes in it, and why the prompt
@@ -33,14 +33,13 @@ no deliberate structure or technique, and refine it based on what you see.
 ```
 | Version | Result / score | What changed |
 |---------|----------------|--------------|
-| Naive baseline | [result] | [notes] |
-| Version 1 | [result] | [notes] |
-| Final | [result] | [notes] |
-**What testing showed:** [In your own words, how your designed prompt performed
-compared to the baseline, and what you changed as a result.]
-**What I learned:** [What this taught you about prompt design.]
+| Naive baseline | 0 | No clarity, frame, requirements, etc.  | 
+| Version 1 | 100 | RTF structure gave it role, task, and format. (also contraints and reasoning) | 
+| Final | 100 | 
+**What testing showed:** The Naive prompt got zero because it had no detail or requirements at all. I changed that by adding the RTF structure which got the prompt to 100 percent immediately even with fairly brief instructions.
+**What I learned:** You can tailor prompts to give you literally anything and in the way that helps you best.
 ---
 ## Strengths and Limitations
-**Works well when:** [The conditions where this prompt performs best.]
-**Struggles when:** [Where it breaks down, and why.]
-**Would improve next:** [What you would refine with more time.]
+**Works well when:** When explaining SHORTER scripts. It needs to go in to detail when dealing with really long scripts.
+**Struggles when:** It needs to go in to detail when dealing with really long more complex scripts.
+**Would improve next:** Explain error messages better.
