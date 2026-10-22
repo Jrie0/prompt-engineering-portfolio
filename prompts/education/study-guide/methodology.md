@@ -32,14 +32,13 @@ no deliberate structure or technique, and refine it based on what you see.
 ```
 | Version | Result / score | What changed |
 |---------|----------------|--------------|
-| Naive baseline | [result] | [notes] |
-| Version 1 | [result] | [notes] |
-| Final | [result] | [notes] |
-**What testing showed:** [In your own words, how your designed prompt performed
-compared to the baseline, and what you changed as a result.]
-**What I learned:** [What this taught you about prompt design.]
+| Naive baseline | 0 | Bare question, gave me long paragraphs. |
+| Version 1 | 100 | Added the CARE structure without examples. |
+| Final | 100 | [notes] |
+**What testing showed:** The Naive prompt gave me long complex sentences, but the few shot examples forced the AI to give give me the nice card layout.
+**What I learned:** Showing examples of how you want information is better than describing the information you want without them.
 ---
 ## Strengths and Limitations
-**Works well when:** [The conditions where this prompt performs best.]
-**Struggles when:** [Where it breaks down, and why.]
-**Would improve next:** [What you would refine with more time.]
+**Works well when:** Summarizing science, history, and vocab concepts with definitions.
+**Struggles when:** Going through large documents with multiple topics.
+**Would improve next:** Add a multiple choice quiz.
