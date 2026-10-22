@@ -36,6 +36,8 @@ Ray-Ban Meta glasses are built for a generation that values **living in the mome
 ### **The Tagline**
 
 > *"Look iconic. Stay present. Powered by Meta AI."*
+
+
 **Improved Input (100 score)**: Role: Act as a pro salesman who writes very persuasive elevator pitches. Task: Take the Ray Ban Meta AI glasses and target the everyday consumer and turn it into a 30 second elevator pitch. Contraints: Limit the entire pitch to 75-90 words. Don't use corporate slop words like revolutionary or next gen. Format: The Hook: Sentence pointing out the customers struggle. The solution: 2 sentences introducing the product and how it eases the customers struggle. The Advantage: A sentence explaining why the product is better than alternatives. Call to action: A closing sentence leading the customer on what to do next. 
 
 **Output** : **The Hook:** Ever missed your kid’s best play or a breathtaking sunset because you were fumbling with your smartphone camera?
