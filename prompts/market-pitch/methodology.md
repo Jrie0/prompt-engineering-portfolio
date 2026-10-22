@@ -32,14 +32,13 @@ no deliberate structure or technique, and refine it based on what you see.
 ```
 | Version | Result / score | What changed |
 |---------|----------------|--------------|
-| Naive baseline | [result] | [notes] |
-| Version 1 | [result] | [notes] |
-| Final | [result] | [notes] |
-**What testing showed:** [In your own words, how your designed prompt performed
-compared to the baseline, and what you changed as a result.]
-**What I learned:** [What this taught you about prompt design.]
+| Naive baseline | 0 | No structure, just a straight up bare question. |
+| Version 1 | 100 | More in detail prompt with RTF structure.  |
+| Final | 100 |
+**What testing showed:** The Naive prompt gave me a long paragraph with super confusing terms. Definitely not readable/speak able in 30 seconds. That's why I added a word limit and 4 part structure to make the pitch easy to say in 30 seconds.
+**What I learned:** Limiting buzzwords makes the AI actually explain something through instead of using a shortcut.
 ---
 ## Strengths and Limitations
-**Works well when:** [The conditions where this prompt performs best.]
-**Struggles when:** [Where it breaks down, and why.]
-**Would improve next:** [What you would refine with more time.]
+**Works well when:** Pitching products such as apps, objects, etc.
+**Struggles when:** Describing more complex systems or technical products.
+**Would improve next:** Add a bullet point that shows the price and even savings.
