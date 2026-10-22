@@ -10,7 +10,7 @@
 **Context:**
 Students studying for classroom tests need straightforward study notes instead of long textbook articles.
 **Action:**
-Read the material in given notes and generate a study card about the core concept written at a certain grade level.
+Read the material in [NOTES] and generate a study card about the core concept written at a [Target Grade Level].
 **`Example 1:**
 Input Notes: Photosynthesis happens in plants chloroplasts using sunlight, water, and CO2 to make oxygen and glucose.
 Output Concept: Photosynthesis
